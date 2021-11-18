@@ -58,7 +58,7 @@
     // - створити функцію яка повертає найбільше число з масиву
     //
 
-    let array = [12, 132, 12, 212315, 4, 542, 34, 123]
+    // let array = [12, 132, 12, 212315, 4, 542, 34, 123]
 
     // function maxArrNum(arr) {
     //     let maxNumOfArray = arr[0];
@@ -79,17 +79,17 @@
     //
     // - створити функцію яка повертає найменьше число з масиву
 
-    function minArrNum(ararat) {
-        let min = ararat[0];
-        for (const minElement of ararat) {
-            if (minElement < min) {
-                min = minElement;
-            }
-        }
-        return min
-    }
-
-    document.write(minArrNum(array));
+    // function minArrNum(ararat) {
+    //     let min = ararat[0];
+    //     for (const minElement of ararat) {
+    //         if (minElement < min) {
+    //             min = minElement;
+    //         }
+    //     }
+    //     return min
+    // }
+    //
+    // document.write(minArrNum(array));
 
 
     //
@@ -97,10 +97,36 @@
     //
     //
     // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
+
+
+    // function summator(arguments) {
+    //     let summ = 0;
+    //     for (const argument of arguments) {
+    //         summ += argument;
+    //     }
+    //     console.log(summ);
+    // }
+    // summator([5,5,10])
     //
-    //
-    //
-    //
+
+    function f(a) {
+        console.log(arguments);
+    }
+    f(1,1,1,1,1)
+
+    // let summArray = [1,2,3,4]; // 10
+    // function sumElement (array){
+    //     let sum = 0;
+    //     for (const arrayElement of array) {
+    //         sum += arrayElement; // // 1 спосіб скорочений
+    //         // sum = arrayElement + sum;
+    //     }
+    //     return sum;
+    // }
+    // document.write(sumElement(summArray))
+
+
+
     //
     // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
     //
