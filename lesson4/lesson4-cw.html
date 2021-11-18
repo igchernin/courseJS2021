@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+
+<script>
+
+
+    // - створити функцію яка приймає три числа та виводить найменьше. (Без Math.min!)
+    //
+
+    // function minNum(a, b, c) {
+    //     if (a < b && a < c) {
+    //         document.write('<div>')
+    //         document.write(a + ` - это первое число`)
+    //         document.write('</div>');
+    //     } else if (b < a && b < c) {
+    //         document.write('<div>')
+    //         document.write(b + ' - это второе число')
+    //         document.write('</div>');
+    //     } else if (c < a && c < b) {
+    //         document.write('<div>')
+    //         document.write(c + ' - это третье число')
+    //         document.write('</div>');
+    //     } else {
+    //         document.write('<div>')
+    //         document.write(a+ '='+ b +'='+ c + ' числа равны')
+    //         document.write('</div>');
+    //     }
+    // }
+    //
+    // minNum(7, 7, 5)
+
+    //
+    //
+    // - створити функцію яка приймає три числа та виводить найбільше. (Без Math.max!)
+    //
+
+
+    // function maxNum(a, b, c) {
+    //     if (a > b && a > c) {
+    //         console.log(a);
+    //     } else if (b > a && b > c) {
+    //         console.log(b);
+    //     }else if (c > a && c > b) {
+    //         console.log(c);
+    //     } else {
+    //         console.log(`${a}=${b}=${c}`);
+    //     }
+    // }
+    // maxNum(8,8,8)
+
+    //
+    //
+    // - створити функцію яка повертає найбільше число з масиву
+    //
+
+    let array = [12, 132, 12, 212315, 4, 542, 34, 123]
+
+    // function maxArrNum(arr) {
+    //     let maxNumOfArray = arr[0];
+    //     for (const maxNumOfArrayElement of arr) {
+    //         if (maxNumOfArrayElement > maxNumOfArray) {
+    //             maxNumOfArray = maxNumOfArrayElement;
+    //         }
+    //     }
+    //     return maxNumOfArray
+    // }
+    //
+    // document.write(maxArrNum(array));
+
+
+    //
+    //
+    //
+    //
+    // - створити функцію яка повертає найменьше число з масиву
+
+
+    function minArrNum(ararat) {
+        let min = ararat[0];
+        for (const minElement of ararat) {
+            if (minElement < min) {
+                min = minElement;
+            }
+        }
+        return min
+    }
+
+    document.write(minArrNum(array));
+
+
+
+
+
+
+    //
+    //
+    //
+    //
+    // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
+    //
+    //
+    //
+    //
+    //
+    // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
+    //
+    //
+    //
+    //
+    //
+    // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше,
+    // а виводить найбільше (Math використовувати заборонено);
+    //
+    //
+    //
+    // - створити функцію яка заповнює масив рандомними числами
+    // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
+    //
+    //
+    //
+    // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент, який характеризує кінцеве значення діапазону.
+    //
+    //
+    //
+    //
+    // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+
+
+</script>
+
+
+<body>
+
+</body>
+</html>
