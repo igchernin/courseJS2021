@@ -168,12 +168,59 @@ let massrand = ['ivan', true, false, 23, '+', 'masha', 'inkognito', 54, 11, true
 // - Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів.
 // Вивести в консоль всі його елементи в циклі.
 
-for (let i = 0; i < massrand.length; i++) {
-    console.log(massrand[i]);
-}
+// let arrnull = []
+// for (i = 0; i < 10; i++) {
+//     arrnull[i] = i+3
+// }
+// console.log(arrnull);
+
 
 // - Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
-// - Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
-// - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
+
+
+// for (let i = 0; i < 10; i++) {
+//     console.log(i);
+//     document.write(`${i}<br>`);
+//
+// }
+//
+// // - Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+// for (let i = 0; i < 100; i++) {
+//     console.log(i);
+//     document.write(`${i}<br>`);
+// }
+//
+// // - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
+// for (let i = 0; i < 100; i+=2) {
+//     console.log(i);
+//     document.write(`${i}<br>`);
+// }
+
+
 // - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
+// for (let i = 0; i < 100; i++) {
+//     if (i % 2 === 0 && i !== 0) {
+//         console.log(i);
+//         document.write(`${i} <br>`);
+//     }
+// }
+
+
 // - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
+
+// for (i = 0; i < 100; i++) {
+//     if (i % 2 !== 0) {
+//         console.log(i);
+//     }
+// }
+
+// for (i = 0; i < 100; i++) {
+//     if (i % 3 === 0) {
+//         console.log(i);
+//     }
+// }
+
+
+
+
+
