@@ -140,14 +140,41 @@
     //
 
 
-
-
+    // function minMaxNum(a) {
+    //     let min = arguments[0];
+    //     let max = arguments[0];
+    //     for (const num of arguments) {
+    //         if (num < min) {
+    //             min = num;
+    //         }
+    //         if (num > max) {
+    //             max = num;
+    //         }
+    //     }
+    //     console.log('Максимальное число - '+ max);
+    //     return min;
+    // }
+    // document.write('Минимальное число - '+ minMaxNum(5,2,9,4));
 
 
 
 
     // - створити функцію яка заповнює масив рандомними числами
     // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
+
+
+    function random() {
+        let arr = []
+        for (let i = 0; i < 100; i++) {
+            arr.push(Math.round(Math.random() * 100))
+        }
+        return arr
+    }
+    document.write(random());
+
+
+
+
     //
     //
     //
