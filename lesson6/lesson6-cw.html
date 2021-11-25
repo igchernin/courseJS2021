@@ -98,7 +98,26 @@
     //
 
 
+    // function sortNums(direction) {
+    //     let nums = [11, 21, 3];
+    //     if (direction === 'ascending') {
+    //         nums.sort((a, b) => a - b)
+    //         return nums
+    //     } else if (direction === 'descending') {
+    //         nums.sort((a, b) => b - a);
+    //         return nums
+    //     }
+    // }
 
+    //сокращенный вариант
+    // let arr = [27, 19, 14, 68, 51, 37, 95, 9, 14, 65, 20, 32, 91, 40, 79, 10, 15, 19, 98, 6]
+    // let sortNums = (direction) => {
+    //     if (direction === 'ascending') return arr.sort((a, b) => a - b);
+    //     if (direction === 'descending') return arr.sort((a, b) => b - a);
+    // }
+    //
+    // console.log(sortNums('ascending')); // [3,11,21]
+    // console.log(sortNums('descending')); // [21,11,3]
 
 
     //
@@ -111,11 +130,40 @@
     //     {title: 'FullStack', monthDuration: 7},
     //     {title: 'Frontend', monthDuration: 4}
     // ];
-    // -- відсортувати його за спаданням за monthDuration
-    // -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
+    // // -- відсортувати його за спаданням за monthDuration
+    // // -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
+    // //
     //
+    //
+    // // let cc = coursesAndDurationArray.map(item => {
+    // //     item.monthDuration.sort((a, b) => a - b);
+    // //     return item
+    // // })
+    // // console.log(cc);
+    //
+    // console.log(coursesAndDurationArray.sort((a, b) => b.monthDuration - a.monthDuration))
+    //
+    //
+    // let filter = coursesAndDurationArray.filter(item => item.monthDuration > 5);
+    // console.log(filter);
+
+
     // - Напишите функцию cutString(str, n), которая делит строку на подстроки, состоящие из n символов.
     // document.writeln(cutString('наслаждение',3)) // [нас,лаж,ден,ие]
+
+
+    function cutString(str, n) {
+        let rez = str.split('', n)
+        console.log(rez);
+
+    }
+    document.write(cutString('наслаждение и еще что-то', 3));
+    // document.writeln(cutString('наслаждение',3)) // [нас,лаж,ден,ие]
+
+
+    // let a = 'привет я тут';
+    // let b = a.split(' ');
+    // console.log(b);
 
 
 </script>
