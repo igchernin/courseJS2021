@@ -152,13 +152,42 @@
     // document.writeln(cutString('наслаждение',3)) // [нас,лаж,ден,ие]
 
 
-    function cutString(str, n) {
-        let rez = str.split('', n)
-        console.log(rez);
+    // function cutString(str, n) {
+    //     // let rez = str.split('', n)
+    //     let arr = []
+    //     for (let i = 0; i < str.length; i++) {
+    //         arr.push(str.substr(n))
+    //     }
+    //     // let rez = str.length
+    //     // console.log(rez);
+    //
+    // }
+    // document.write(cutString('наслаждение и еще что-то', 3));
+    // // document.writeln(cutString('наслаждение',3)) // [нас,лаж,ден,ие]
+
+
+    // function cutString(str, n) {
+    //     const res = [];
+    //     while (str.length) {
+    //         res.push(str.substr(0, n))
+    //         str = str.slice(n)
+    //     }
+    //     console.log(res)
+    //     return res
+    // };
+    // document.writeln(cutString('Армагедон', 3))
+
+    function cutStr(str, n) {
+        let arr = []
+        for (let i = 0; i < str.length; i++) {
+            let rezz = str.substr(0, n).slice(n)
+            arr.push(rezz)
+        }
+        console.log(arr);
 
     }
-    document.write(cutString('наслаждение и еще что-то', 3));
-    // document.writeln(cutString('наслаждение',3)) // [нас,лаж,ден,ие]
+
+    document.write(cutStr('Строка которую нужно порезать на символы', 3));
 
 
     // let a = 'привет я тут';
