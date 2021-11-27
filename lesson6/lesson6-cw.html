@@ -40,14 +40,14 @@
     //     - створити функцію, яка генерує масив рандомних числових цілих значень в діапазоні від 0 до 100.
 
 
-    function rand(count) {
-        let arr = []
-        for (let i = 0; i < count; i++) {
-            let randNum = Math.round(Math.random() * 100)
-            arr.push(randNum)
-        }
-        return arr
-    }
+    // function rand(count) {
+    //     let arr = []
+    //     for (let i = 0; i < count; i++) {
+    //         let randNum = Math.round(Math.random() * 100)
+    //         arr.push(randNum)
+    //     }
+    //     return arr
+    // }
 
     ////ВОПРОС: правильно ли сокращение под стрелочную функцию?
     // let arr = []
@@ -65,11 +65,11 @@
     // Відсортувати його за допомоги sort
 
 
-    let arrSort = rand(20)
-    arrSort.sort((n1, n2) => {
-        return n1 - n2
-    })
-    // console.log(arrSort);
+    // let arrSort = rand(20)
+    // arrSort.sort((n1, n2) => {
+    //     return n1 - n2
+    // })
+    // // console.log(arrSort);
 
 
     // - створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень.
@@ -151,25 +151,54 @@
     // - Напишите функцию cutString(str, n), которая делит строку на подстроки, состоящие из n символов.
     // document.writeln(cutString('наслаждение',3)) // [нас,лаж,ден,ие]
 
-function cutStr(str, n) {
+    //ВОПРОС: не могу додумать, как его сделать через for. я писал вот так:
+    // for (let i = 0; i < str.length; i+=3) {
+    //но тогда не до конца строку перебирало
+    //я понимаю, что каждый раз, когда срабатывает цикл - у меня просто уменьшается длина строки на 3
+    //и поэтому функция обрабатывает не на первоначальную длину, а уже на ту, которая в ходе и уменьшается.
 
-  let arr = []
+    //нижу я прописал функуцию с указанием изначальной длины строки. Но как сделать ее динамической?
+    // function cutStr(str, n) {
+    //     let arr = [];
+    //     for (let i = 0; i < 41; i += 3) {
+    //         arr.push(str.substr(0, n))
+    //         str = str.slice(n)
+    //     }
+    //     return arr
+    // }
 
-  for (let i = 0; i < str.length; i ++) {
+    //ВОПРОС: а тут делает 40 итераций, потому что изначально определяет, что длина 41 символ?
+    //но как его можно так сделать, чтобы не проверяло лишние?
+    // function cutStr(str, n) {
+    //     let arr = [];
+    //     for (let st of str) {
+    //         arr.push(str.substr(0, n))
+    //         str = str.slice(n);
+    //     }
+    //     return arr
+    // }
 
-    let rezz = str.substr(0, n)
 
-    arr.push(rezz)
+    //решение не мое
+    // function cutStr(str, n) {
+    //     let arr = [];
+    //     while (str.length) {
+    //         arr.push(str.substr(0, n))
+    //         str = str.slice(n)
+    //     }
+    //     return arr
+    // }
 
-    str = str.slice(n)
 
-  }
+    document.write(cutStr('Строка которую нужно порезать на символы!', 3));
 
-  return arr
-
-}
-
-document.write(cutStr('Строка которую нужно порезать на символы', 3));
+    ///////ЗАМЕТКИ
+    //     let aaa = 'Строка которую нужно порезать на символы'
+    //     console.log(aaa.slice(3)); //убрать столько символов с начала
+    //     console.log(aaa.slice(3,9)); //оставить символы с символа по символ
+    //
+    //     console.log(aaa.substring(3, 9)); //оставить символы с символа по символ
+    //     console.log(aaa.substr(3, 3)); //с кол-во символов
 
 </script>
 <body>
