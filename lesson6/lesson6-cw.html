@@ -151,49 +151,25 @@
     // - Напишите функцию cutString(str, n), которая делит строку на подстроки, состоящие из n символов.
     // document.writeln(cutString('наслаждение',3)) // [нас,лаж,ден,ие]
 
+function cutStr(str, n) {
 
-    // function cutString(str, n) {
-    //     // let rez = str.split('', n)
-    //     let arr = []
-    //     for (let i = 0; i < str.length; i++) {
-    //         arr.push(str.substr(n))
-    //     }
-    //     // let rez = str.length
-    //     // console.log(rez);
-    //
-    // }
-    // document.write(cutString('наслаждение и еще что-то', 3));
-    // // document.writeln(cutString('наслаждение',3)) // [нас,лаж,ден,ие]
+  let arr = []
 
+  for (let i = 0; i < str.length; i ++) {
 
-    // function cutString(str, n) {
-    //     const res = [];
-    //     while (str.length) {
-    //         res.push(str.substr(0, n))
-    //         str = str.slice(n)
-    //     }
-    //     console.log(res)
-    //     return res
-    // };
-    // document.writeln(cutString('Армагедон', 3))
+    let rezz = str.substr(0, n)
 
-    function cutStr(str, n) {
-        let arr = []
-        for (let i = 0; i < str.length; i++) {
-            let rezz = str.substr(0, n).slice(n)
-            arr.push(rezz)
-        }
-        console.log(arr);
+    arr.push(rezz)
 
-    }
+    str = str.slice(n)
 
-    document.write(cutStr('Строка которую нужно порезать на символы', 3));
+  }
 
+  return arr
 
-    // let a = 'привет я тут';
-    // let b = a.split(' ');
-    // console.log(b);
+}
 
+document.write(cutStr('Строка которую нужно порезать на символы', 3));
 
 </script>
 <body>
