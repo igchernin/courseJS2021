@@ -55,7 +55,9 @@ console.log(sort);
 // - створити класс для об'єктів Client з полями
 // id, name, surname , email, phone, order (поле є масивом зі списком товарів)
 
-
+id: 1, name: 'viktor',surname:'ibrahimov',email:'ibra@mail.ru',phone:'0667678855',order:
+{tovary: 'manka','grachka','perlovka'
+}
 
 
 // - створити пустий масив, наповнити його 10 об'єктами Client
