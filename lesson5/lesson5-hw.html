@@ -39,7 +39,7 @@
     // - створити функцію яка приймає масив та виводить кожен його елемент
 
 
-    // function f(arr) {
+    // let f = arr => {
     //     for (let i = 0; i < arr.length; i++) {
     //         const arrElement = arr[i];
     //     }
@@ -58,24 +58,68 @@
     // console.log(arrtrans1);
 
 
-
     // - створити функцію яка  створює параграф з текстом. Текст задати через аргумент
 
 
+    // let par = (text) => {
+    //     document.write('<p>')
+    //     document.write(text)
+    //     document.write('</p>')
+    // }
+    //
+    // par('привет')
+
     // - створити функцію яка  створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 
+    // let ulli = (text) => {
+    //     document.write('<ul>');
+    //     document.write(`<li>${text}</li>`)
+    //     document.write(`<li>${text}</li>`)
+    //     document.write(`<li>${text}</li>`)
+    //     document.write('</ul>');
+    // }
+    //
+    // ulli('тут текст')
 
     // - створити функцію яка  створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий.
     // Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
 
+    // let ulli = (text, count) => {
+    //     document.write('<ul>');
+    //     for (let i = 0; i < count; i++) {
+    //         document.write(`<li>${text}</li>`);
+    //     }
+    //     document.write('</ul>');
+    // }
+    // ulli(`текст который нужно вывести в li-шки`, 3)
 
     // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 
-
+    // let arr = [32, 34, true, 'BMW', 2222, true, false, 'Merc', 'Opel']
     //
+    // let liElArr = arr => {
+    //     for (let i = 0; i < arr.length; i++) {
+    //         document.write(`<li>${arr[i]}</li>`);
+    //     }
+    // }
+    // liElArr(arr)
+
+
     // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ.
     // Для кожного об'єкту окремий блок.
+
+    // let obj = (id, name, age) => {
+    //     document.write('<div>')
+    //     document.write(`${id}`);
+    //     document.write(`.${name}`);
+    //     document.write(`.${age}`);
+    //     document.write('</div>');
     //
+    // }
+    //
+    // obj(1, 'Ira', 22);
+    // obj(2, 'Kira', 31);
+    // obj(3, 'Nura', 55);
 
 
 </script>
