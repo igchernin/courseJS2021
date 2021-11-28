@@ -61,6 +61,9 @@ let us = [
             {tovary1: 'manka', tovary2:'grachka',tovary3: 'perlovka'}
     }]
 
+function Client(id,name,email,phone,order){
+
+}
 
 // - створити пустий масив, наповнити його 10 об'єктами Client
 
