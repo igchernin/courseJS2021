@@ -40,16 +40,16 @@
     //     - створити функцію, яка генерує масив рандомних числових цілих значень в діапазоні від 0 до 100.
 
 
-    // function rand(count) {
-    //     let arr = []
-    //     for (let i = 0; i < count; i++) {
-    //         let randNum = Math.round(Math.random() * 100)
-    //         arr.push(randNum)
-    //     }
-    //     return arr
-    // }
+    function rand(count) {
+        let arr = []
+        for (let i = 0; i < count; i++) {
+            let randNum = Math.round(Math.random() * 100)
+            arr.push(randNum)
+        }
+        return arr
+    }
 
-    ////ВОПРОС: правильно ли сокращение под стрелочную функцию?
+    //ВОПРОС: правильно ли сокращение под стрелочную функцию?
     // let arr = []
     // let rand = (count) => {
     //     for (let i = 0; i < count; i++) {
@@ -57,19 +57,18 @@
     //         arr.push(randNum);
     //     } return arr
     // }
-
+    //
     // console.log(rand(10))
 
 
     // - створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень.
     // Відсортувати його за допомоги sort
 
-
-    // let arrSort = rand(20)
-    // arrSort.sort((n1, n2) => {
-    //     return n1 - n2
-    // })
-    // // console.log(arrSort);
+    let arrSort = rand(20)
+    arrSort.sort((n1, n2) => {
+        return n1 - n2
+    })
+    console.log(arrSort);
 
 
     // - створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень.
@@ -84,10 +83,17 @@
     // за допомоги map та колбеку перетворити всі об'єкти в масиві на стрінгові.
 
     ////ВОПРОС: правильно ли так было сделать? просто сделать конкатинацию с пустотой? :)
+    //первый вариант с конкатинацией с пустотой ''
     // let map = arrSort.map(value => {
     //     return value +'';
     // });
     // console.log(map);
+
+    // //второй вариант, просто с .toString()
+    // let map = arrSort.map(value => {
+    //     return value.toString();
+    // });
+    // console.log(map,'---------------');
 
 
     // - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого,
@@ -159,18 +165,18 @@
 
     //нижу я прописал функуцию с указанием изначальной длины строки. Но как сделать ее динамической?
 
-    function cutStr(str, n) {
-        let arr = [];
-        for (let i = 0; i < str.length; i += 3) {
-            arr.push(str.substr(0, n))
-            str = str.slice(n)
-        }
-        return arr
-    }
-
-    let str = 'Строка которую нужно порезать на символы!'.split()
-    console.log(str);
-    document.write(cutStr(str, 3))
+    // function cutStr(str, n) {
+    //     let arr = [];
+    //     for (let i = 0; i < str.length; i += 3) {
+    //         arr.push(str.substr(0, n))
+    //         str = str.slice(n)
+    //     }
+    //     return arr
+    // }
+    //
+    // let str = 'Строка которую нужно порезать на символы!'.split()
+    // console.log(str);
+    // document.write(cutStr(str, 3))
 
     //ВОПРОС: а тут делает 40 итераций, потому что изначально определяет, что длина 41 символ?
     //но как его можно так сделать, чтобы не проверяло лишние?
