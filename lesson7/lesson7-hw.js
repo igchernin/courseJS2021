@@ -46,7 +46,7 @@ let fil = usersArr.filter((value) => {
 //     return a.id - b.id;
 // });
 
-let sort = usersArr.sort((a,b) => a.id - b.id)
+let sort = usersArr.sort((a, b) => a.id - b.id)
 
 
 console.log(sort);
@@ -55,9 +55,11 @@ console.log(sort);
 // - створити класс для об'єктів Client з полями
 // id, name, surname , email, phone, order (поле є масивом зі списком товарів)
 
-id: 1, name: 'viktor',surname:'ibrahimov',email:'ibra@mail.ru',phone:'0667678855',order:
-{tovary: 'manka','grachka','perlovka'
-}
+let us = [
+    {
+        id: 1, name: 'viktor', surname: 'ibrahimov', email: 'ibra@mail.ru', phone: '0667678855', order:
+            {tovary1: 'manka', tovary2:'grachka',tovary3: 'perlovka'}
+    }]
 
 
 // - створити пустий масив, наповнити його 10 об'єктами Client
