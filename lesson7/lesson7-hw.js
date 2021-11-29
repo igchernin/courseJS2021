@@ -46,26 +46,43 @@ let fil = usersArr.filter((value) => {
 //     return a.id - b.id;
 // });
 
-let sort = usersArr.sort((a, b) => a.id - b.id)
-
-
-console.log(sort);
+// //короче вариант
+// let sort = usersArr.sort((a, b) => a.id - b.id)
+// console.log(sort);
 
 
 // - створити класс для об'єктів Client з полями
 // id, name, surname , email, phone, order (поле є масивом зі списком товарів)
 
-let us = [
-    {
-        id: 1, name: 'viktor', surname: 'ibrahimov', email: 'ibra@mail.ru', phone: '0667678855', order:
-            {tovary1: 'manka', tovary2:'grachka',tovary3: 'perlovka'}
-    }]
 
-function Client(id,name,email,phone,order){
-
+function Client(id, name, email, phone, order) {
+    this.id = id
+    this.name = name
+    this.email = email
+    this.phone = phone
+    this.order = order
 }
 
 // - створити пустий масив, наповнити його 10 об'єктами Client
 
+let client = []
+
+client.push(a1 = new Client(1, 'Boday', 'bod@mai.ru', '066666666', ['trava', 'sandali', 'verovki']))
+client.push(a2 = new Client(2, 'Vasya', 'asdasd@mai.ru', '055555444', ['tomaty', 'krosy', 'cup']))
+client.push(a2 = new Client(3, 'Petro', 'asdasd@mai.ru', '055555444', ['tomaty', 'krosy', 'cup', 'iris']))
+client.push(a2 = new Client(4, 'Ivan', 'asdasd@mai.ru', '055555444', ['tomaty', 'krosy', 'cup', 'maslo', 'korobka']))
+client.push(a2 = new Client(5, 'Kostua', 'asdasd@mai.ru', '055555444', ['tomaty', 'krosy', 'cup', 'tova', 'tos', 'toster', 'ira']))
+client.push(a2 = new Client(6, 'Taras', 'asdasd@mai.ru', '055555444', ['tomaty', 'krosy', 'cup', 'mas', 'qweq', 'adasd', 'asdasdasd', 'assaassaas']))
+client.push(a2 = new Client(7, 'Radik', 'asdasd@mai.ru', '055555444', ['tomaty', 'krosy', 'cup', 'sasdasd', 'asdasda', 'asdasdad', 'asdasda']))
+client.push(a2 = new Client(8, 'Kent', 'asdasd@mai.ru', '055555444', ['tomaty', 'krosy', 'cup', 'asdasd']))
+client.push(a2 = new Client(9, 'Oleg', 'asdasd@mai.ru', '055555444', ['tomaty', 'krosy', 'cup']))
+
+// console.log(client);
+
 
 // - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
+
+let sort = client.sort(function (a, b) {
+    return a.order.length - b.order.length;
+})
+console.log(sort);
