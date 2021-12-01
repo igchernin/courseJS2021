@@ -7,6 +7,10 @@ let contentID = document.getElementById('content');
 console.log(contentID.innerText);
 
 // -- отримує текст з блоку з id "rules"
+
+let rules = document.getElementById('rules');
+console.log(rules.innerText);
+
 // -- замініть текст параграфа з id 'content' на будь-який інший
 // -- замініть текст параграфа з id 'rules' на будь-який інший
 // -- змініть кожному елементу колір фону на червоний
