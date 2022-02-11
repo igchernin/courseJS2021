@@ -10,7 +10,7 @@
 // for (let i = 0; i <= 100; i++){
 //     document.write(`<div>day ${i}</div>`)
 // }
-
+/test выгрузки
 //цикл, перебор чисел и
 // let array = [11,22,33]
 // for (let i = 0; i < 3; i++){
