@@ -2,7 +2,7 @@
 // 1) Напишіть код, який :
 // a) додає клас з назвою групи, елементу з ід main_header
 
-
+document.getElementsByTagName('p')
 
 
 
