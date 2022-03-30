@@ -44,3 +44,5 @@
 // for (const elementsByClassNameElement of elementsByClassName) {
 //     elementsByClassNameElement.style.color = 'red'
 // }
+
+

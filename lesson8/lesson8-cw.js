@@ -2,7 +2,8 @@
 // 1) Напишіть код, який :
 // a) додає клас з назвою групи, елементу з ід main_header
 
-document.getElementsByTagName('p')
+// document.getElementsByTagName('p')
+console.log(document)
 
 
 
@@ -20,3 +21,11 @@ document.getElementsByTagName('p')
 // k) отримує елемент з класом content_1 та заміняє  в ньому тест на довільний. Текст отримати з prompt()
 // l) отримати елементи p та змінити їм padding на 20px
 // m) отримати елементи з класом text2 та змінити їм текст на назву групи (mon-year. Пример sep-2021)
+
+
+
+// classList[0].getElementsByTagName('span').InnerHTML = 12
+let classList = document.getElementsByClassName('ellipsis _1ha3')
+let spanInClassList = classList[0].getElementsByTagName('span')[0].innerHTML = 12
+classList[1].getElementsByTagName('span')[0].innerHTML = 332
+classList[2].getElementsByTagName('span')[0].innerHTML = '1 055 548'
